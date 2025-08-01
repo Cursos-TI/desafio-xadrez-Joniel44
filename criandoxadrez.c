@@ -6,7 +6,7 @@ int main() {
    int contadorBispo = 0;
    int contadorRainha = 0;
 
-   
+   printf("**Jogo de Xadrez**\n\n");
    for (int i = 0; i < torre; i++) {
       printf("Torre 5 casas a frente!\n");
    } 
