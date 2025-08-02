@@ -1,4 +1,8 @@
 #include <stdio.h>
+#define MOV_TORRE 5
+#define MOV_BISPO 5
+#define MOV_RAINHA 8
+#define MOV_Cavalo_PRIMEIRA_PARTE 2
 
 int main() {
    
@@ -11,11 +15,11 @@ int main() {
    // direção das peças abaixo
   
    printf("Torre\n");
-   for (int i = 0; i < torre; i++) {  // A torre andando 5 casas acima
+   for (int i = 0; i < MOV_TORRE; i++) {  // A torre andando 5 casas acima
       printf("Direita\n");
    } 
    printf("Bispo\n");
-   while (contadorBispo < bispo) {       // O bispo andando a 5 casas na diagonal
+   while (contadorBispo < MOV_BISPO) {       // O bispo andando a 5 casas na diagonal
       printf("Cima e direita\n");
       contadorBispo++;
    }
@@ -24,11 +28,11 @@ int main() {
    do {
       printf("Esquerda\n");
       contadorRainha++;                      // A rainha seguindo 8 casas a esquerda
-   } while (contadorRainha < rainha); 
+   } while (contadorRainha < MOV_RAINHA); 
    
    printf("\nCavalo\n");
 
-  for (i = 1; i < contadorCavalo; i++)                // Utilizado um loop dentro do loop.
+  for (i = 1; i < MOV_Cavalo_PRIMEIRA_PARTE; i++)                // Utilizado um loop dentro do loop.
    {  j = 0;
    while (j < 2) {
       printf("baixo\n");
