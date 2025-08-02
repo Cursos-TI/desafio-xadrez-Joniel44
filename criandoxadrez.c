@@ -3,8 +3,8 @@
 int main() {
    
    int torre = 5, bispo = 5, rainha = 8;
-   int contadorBispo = 0;
-   int contadorRainha = 0;
+   int contadorBispo = 0, contadorRainha = 0;
+   int i, j;
 
    printf("**Jogo de Xadrez**\n\n");
   
