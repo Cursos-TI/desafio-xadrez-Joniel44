@@ -6,7 +6,7 @@
 
 int main() {
    
-   int contadorBispo = 0, contadorRainha = 0, contadorCavalo = 2;
+   int contadorBispo = 0, contadorRainha = 0;
    int i, j;
 
    printf("**Jogo de Xadrez**\n\n");
