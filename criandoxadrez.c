@@ -7,19 +7,23 @@ int main() {
    int contadorRainha = 0;
 
    printf("**Jogo de Xadrez**\n\n");
-   for (int i = 0; i < torre; i++) {
-      printf("Torre 5 casas a frente!\n");
+  
+   // direção das peças abaixo
+  
+   printf("Torre\n");
+   for (int i = 0; i < torre; i++) {  // A torre andando 5 casas acima
+      printf("Cima\n");
    } 
    printf("Bispo\n");
-   while (contadorBispo < bispo) {
-      printf("Diagonal 5 casas a Cima Direita\n");
+   while (contadorBispo < bispo) {       // O bispo andando a 5 casas na diagonal
+      printf("Cima e direita\n");
       contadorBispo++;
    }
    printf("Rainha\n");
    
    do {
-      printf(" 8 casas a Esquerda\n");
-      contadorRainha++;
+      printf("Esquerda\n");
+      contadorRainha++;                      // A rainha seguindo 8 casas a esquerda
    } while (contadorRainha < rainha);     
 
   
