@@ -3,7 +3,7 @@
 int main() {
    
    int torre = 5, bispo = 5, rainha = 8;
-   int contadorBispo = 0, contadorRainha = 0, contadorCavalo = 1;
+   int contadorBispo = 0, contadorRainha = 0, contadorCavalo = 2;
    int i, j;
 
    printf("**Jogo de Xadrez**\n\n");
@@ -12,7 +12,7 @@ int main() {
   
    printf("Torre\n");
    for (int i = 0; i < torre; i++) {  // A torre andando 5 casas acima
-      printf("Cima\n");
+      printf("Direita\n");
    } 
    printf("Bispo\n");
    while (contadorBispo < bispo) {       // O bispo andando a 5 casas na diagonal
@@ -28,7 +28,7 @@ int main() {
    
    printf("\nCavalo\n");
 
-  for (i = 0; i < contadorCavalo; i++)                // Utilizado um loop dentro do loop.
+  for (i = 1; i < contadorCavalo; i++)                // Utilizado um loop dentro do loop.
    {  j = 0;
    while (j < 2) {
       printf("baixo\n");
