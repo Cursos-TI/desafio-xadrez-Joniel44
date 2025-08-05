@@ -1,47 +1,56 @@
 #include <stdio.h>
-#define MOV_TORRE 5
-#define MOV_BISPO 5
-#define MOV_RAINHA 8
-#define MOV_Cavalo_PRIMEIRA_PARTE 2
+
+void andarTorre(int casas) {
+if (casas > 0){
+   printf("Direita!\n");
+   andarTorre(casas - 1);
+}
+}
+void andarRainha(int casas) {
+if (casas > 0) {
+  printf("Esquerda!\n");
+  andarRainha(casas - 1);
+}
+}
+void andarBispo(int casas) {
+   if (casas > 0) {
+      printf("Cima, Direita\n");
+      andarBispo(casas - 1);
+   }
+   
+}
 
 int main() {
-   
-   int contadorBispo = 0, contadorRainha = 0;
-   int i, j;
 
-   printf("**Jogo de Xadrez**\n\n");
+   int  i, j;
+   
+
+   // Movimentação de cada peça do Xadrez
+    printf("Torre\n");
+    andarTorre(5);             // Torre utilizando o FOR, andando em linha reta pra direita.
   
-   // direção das peças abaixo
-  
-   printf("Torre\n");
-   for (int i = 0; i < MOV_TORRE; i++) {  // A torre andando 5 casas acima
-      printf("Direita\n");
-   } 
    printf("Bispo\n");
-   while (contadorBispo < MOV_BISPO) {       // O bispo andando a 5 casas na diagonal
-      printf("Cima e direita\n");
-      contadorBispo++;
-   }
+   andarBispo(5);
+   
    printf("Rainha\n");
-   
-   do {
-      printf("Esquerda\n");
-      contadorRainha++;                      // A rainha seguindo 8 casas a esquerda
-   } while (contadorRainha < MOV_RAINHA); 
-   
-   printf("\nCavalo\n");
+     andarRainha(8);
 
-  for (i = 1; i < MOV_Cavalo_PRIMEIRA_PARTE; i++)                // Utilizado um loop dentro do loop.
-   {  j = 0;
-   while (j < 2) {
-      printf("baixo\n");
-       j++;
-                           // Cavalo anda em L, seria duas linhas abaixo e uma coluna a esquerda.
-   }
-   printf("Esquerda\n");
+
+   
+  printf("\nCavalo\n");
+  for (int i = 1, j = 5; i < 3 && j > 2; i++, j--)
+  {
+   
+   if (i == 3) continue;
+      if (i == 5) break;
+    printf("Cima, Direita\n", i, j);      
+   
+   
   }
-
   
+
+
+
   return 0;
     
 }
