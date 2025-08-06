@@ -38,7 +38,12 @@ int main() {
 
    
   printf("\nCavalo\n");
-  int steps_vertical = 2;
+  for (int k = 0; k < 2; k++) {
+        printf("Cima\n");
+    }
+    printf("Direita\n");
+
+    int steps_vertical = 2;
   int steps_horizontal = 1;
 
   for (int i = 0; i < steps_vertical; i++) {    
@@ -47,7 +52,20 @@ int main() {
     
   for (int j = 0; j < steps_horizontal; j++) {   
   printf("Direita!\n");
-  };      
+  };  
+  
+  int movimento_feito = 0; 
+    for (int i = 0; i < 2; i++) { 
+     printf("Direita!\n");    
+   for (int j = 0; j < 1; j++) {   
+    if (i == 1 && j == 0) {
+        printf("Cima!\n");           
+     movimento_feito = 1;        
+    }   
+    }    
+    if (movimento_feito) {  
+    }
+    
    
    
   
