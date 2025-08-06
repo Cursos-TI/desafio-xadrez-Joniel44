@@ -56,16 +56,16 @@ int main() {
   
   int movimento_feito = 0; 
     for (int i = 0; i < 2; i++) { 
-     printf("Direita!\n");    
+     printf("Cima\n");    
    for (int j = 0; j < 1; j++) {   
     if (i == 1 && j == 0) {
-        printf("Cima!\n");           
+        printf("Direita\n");           
      movimento_feito = 1;        
     }   
     }    
     if (movimento_feito) {  
     }
-    
+    } 
    
    
   
