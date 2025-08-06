@@ -37,10 +37,8 @@ int main() {
    
   printf("\nCavalo\n");
   
-  int movimento_feito = 0; 
     for (int i = 0; i < 2; i++) { 
      printf("Cima\n");    
-   
      for (int j = 0; j < 1; j++) {   
     if (i == 1 && j == 0) 
         printf("Direita\n");  break;  
