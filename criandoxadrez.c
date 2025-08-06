@@ -57,7 +57,8 @@ int main() {
   int movimento_feito = 0; 
     for (int i = 0; i < 2; i++) { 
      printf("Cima\n");    
-   for (int j = 0; j < 1; j++) {   
+   
+     for (int j = 0; j < 1; j++) {   
     if (i == 1 && j == 0) {
         printf("Direita\n"); 
         break;      
@@ -67,8 +68,9 @@ int main() {
     if (movimento_feito) {
 
     }
-    return 0;
+    
     }
+   return 0;
    
    }
 
