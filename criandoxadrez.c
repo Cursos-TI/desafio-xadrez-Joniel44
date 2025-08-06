@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// utilizado o void para simplificar o código
+
 void andarTorre(int casas) {
 if (casas > 0){
    printf("Direita!\n");
@@ -8,7 +10,7 @@ if (casas > 0){
 }
 void andarRainha(int casas) {
 if (casas > 0) {
-  printf("Esquerda!\n");
+  printf("Esquerda!\n");               // código para cada peça do xadrez
   andarRainha(casas - 1);
 }
 }
@@ -24,10 +26,11 @@ int main() {
    
 
    // Movimentação de cada peça do Xadrez
+
     printf("Torre\n");
-    andarTorre(5);             // Torre utilizando o FOR, andando em linha reta pra direita.
+    andarTorre(5);             
   
-   printf("Bispo\n");
+   printf("Bispo\n");                      // Nesta área onde fica a contagem das casas de cada peça
    andarBispo(5);
    
    printf("Rainha\n");
@@ -38,11 +41,11 @@ int main() {
   printf("\nCavalo\n");
   
     for (int i = 0; i < 2; i++) { 
-     printf("Cima!\n");    
+     printf("Cima!\n");                      // Neste, onde me deu o maior trabalho, foi utilizado loops aninhados com múltiplas variáveis.
      for (int j = 0; j < 1; j++) {   
     if (i == 1 && j == 0) 
         printf("Direita!\n");  
-        break;  
+        break;                           
      }
    }
            
