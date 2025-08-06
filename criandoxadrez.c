@@ -59,20 +59,21 @@ int main() {
      printf("Cima\n");    
    for (int j = 0; j < 1; j++) {   
     if (i == 1 && j == 0) {
-        printf("Direita\n");           
+        printf("Direita\n"); 
+        break;      
      movimento_feito = 1;        
-    }   
-    }    
-    if (movimento_feito) {  
     }
-    } 
+    }
+    if (movimento_feito) {
+
+    }
+    return 0;
+    }
    
+   }
+
+
+     
+
+  
    
-  
-  
-
-
-
-  return 0;
-    
-}
