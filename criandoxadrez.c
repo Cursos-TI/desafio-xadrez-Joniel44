@@ -38,15 +38,19 @@ int main() {
 
    
   printf("\nCavalo\n");
-  for (int i = 1, j = 5; i < 3 && j > 2; i++, j--)
-  {
-   
-   if (i == 3) continue;
-      if (i == 5) break;
-    printf("Cima, Direita\n", i, j);      
-   
-   
+  int steps_vertical = 2;
+  int steps_horizontal = 1;
+
+  for (int i = 0; i < steps_vertical; i++) {    
+  printf("Cima!\n");   
   }
+    
+  for (int j = 0; j < steps_horizontal; j++) {   
+  printf("Direita!\n");
+  };      
+   
+   
+  
   
 
 
