@@ -16,7 +16,7 @@ if (casas > 0) {
 }
 void andarBispo(int casas) {
    if (casas > 0) {
-      printf("Cima, Direita\n");
+      printf("Cima!, Direita!\n");
       andarBispo(casas - 1);
    }
    
