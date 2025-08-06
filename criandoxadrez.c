@@ -21,8 +21,6 @@ void andarBispo(int casas) {
 }
 
 int main() {
-
-   int  i, j;
    
 
    // Movimentação de cada peça do Xadrez
@@ -38,40 +36,21 @@ int main() {
 
    
   printf("\nCavalo\n");
-  for (int k = 0; k < 2; k++) {
-        printf("Cima\n");
-    }
-    printf("Direita\n");
-
-    int steps_vertical = 2;
-  int steps_horizontal = 1;
-
-  for (int i = 0; i < steps_vertical; i++) {    
-  printf("Cima!\n");   
-  }
-    
-  for (int j = 0; j < steps_horizontal; j++) {   
-  printf("Direita!\n");
-  };  
   
   int movimento_feito = 0; 
     for (int i = 0; i < 2; i++) { 
      printf("Cima\n");    
    
      for (int j = 0; j < 1; j++) {   
-    if (i == 1 && j == 0) {
-        printf("Direita\n"); 
-        break;      
-     movimento_feito = 1;        
-    }
-    }
-    if (movimento_feito) {
-
-    }
+    if (i == 1 && j == 0) 
+        printf("Direita\n");  break;  
+     }
+   }
+           
     
-    }
+    
    return 0;
-   
+
    }
 
 
