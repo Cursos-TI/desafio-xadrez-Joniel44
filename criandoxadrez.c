@@ -3,10 +3,9 @@
 // utilizado o void para simplificar o código
 
 void andarTorre(int casas) {
-if (casas > 0){
+if (casas > 0) {
    printf("Direita!\n");
-   andarTorre(casas - 1);
-}
+   andarTorre(casas - 1);}
 }
 void andarRainha(int casas) {
 if (casas > 0) {
@@ -43,8 +42,8 @@ int main() {
     for (int i = 0; i < 2; i++) { 
      printf("Cima!\n");                      // Neste, onde me deu o maior trabalho, foi utilizado loops aninhados com múltiplas variáveis.
      for (int j = 0; j < 1; j++) {   
-    if (i == 1 && j == 0) 
-        printf("Direita!\n");  
+    if (i == 1 && j == 0) {
+        printf("Direita!\n"); } 
         break;                           
      }
    }
